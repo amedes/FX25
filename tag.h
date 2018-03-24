@@ -1,0 +1,27 @@
+#ifndef __TAG_H__
+#define __TAG_H__
+
+#include <stdint.h>
+
+#define I_POLY 0x30
+#define Q_POLY 0x36
+
+#define CARRY_BIT 0x20
+
+#define I_SEED 0x3f
+
+#define CO_TAG_SIZE 0x41
+
+#define CO_TAG_00 0x00
+#define CO_TAG_01 0x01
+#define CO_TAG_0B 0x0b
+#define CO_TAG_3F 0x3f
+#define CO_TAG_40 0x40
+
+#define CO_TAG_BITS 63
+
+extern uint64_t co_tag[CO_TAG_SIZE];
+
+int tag_init(void);
+
+#endif /* __TAG_H__ */
